@@ -10,7 +10,7 @@ const BestSellBook = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/all-books?"+searchParams)
+      .get("https://book-store-lgdr.onrender.com/all-books?"+searchParams)
       .then((res) => {
         // console.log(res.data)
         setBooks(res.data);

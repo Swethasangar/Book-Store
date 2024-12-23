@@ -5,7 +5,7 @@ const Shop = () => {
   const [books, setBooks] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:5000/all-books")
+      .get("https://book-store-lgdr.onrender.com/all-books")
       .then((res) => {
         console.log(res.data);
         setBooks(res.data);

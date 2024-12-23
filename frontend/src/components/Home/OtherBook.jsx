@@ -6,7 +6,7 @@ const OtherBooks = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/all-books")
+      .get("https://book-store-lgdr.onrender.com/all-books")
       .then((res) => {
         if (res.data && res.data.length > 4) {
           setBooks(res.data.slice(4, 8)); // Only slice if there are enough items
