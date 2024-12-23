@@ -30,7 +30,7 @@ const SingleBook = ({ cartItems, setCartItems }) => {
 
   useEffect(() => {
     axios
-      .get(`https://book-store-lgdr.onrender.com/${id}`)
+      .get(`https://book-store-lgdr.onrender.com/book/${id}`)
       .then((res) => {
         // console.log("API Response:", res.data);
         setBook(res.data);
